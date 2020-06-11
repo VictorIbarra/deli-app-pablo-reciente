@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TJA-sg-uxV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Controller-->
+        <scene sceneID="QNV-GM-hGs">
+            <objects>
+                <tabBarController id="TJA-sg-uxV" customClass="MainTabController" customModule="deliApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="kW6-ro-uCt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.1019607843" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="0.1019607843" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OuX-9b-nZj" kind="relationship" relationship="viewControllers" id="Ql2-hM-ax8"/>
+                        <segue destination="Rwp-Tl-1Ep" kind="relationship" relationship="viewControllers" id="WAM-4E-zfs"/>
+                        <segue destination="QMA-oc-BeY" kind="relationship" relationship="viewControllers" id="3Rq-w7-JkG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aB9-Oh-j2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="249"/>
+        </scene>
+        <!--Stores-->
+        <scene sceneID="6sg-zI-pUM">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="OuX-9b-nZj" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="Stores" image="ic_place" selectedImage="ic_place" id="xDG-TM-Klg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HT7-jW-XaK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5r3-bH-zyn" kind="relationship" relationship="rootViewController" id="G0N-lr-4Pa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3i-yX-Doc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294" y="-430"/>
+        </scene>
+        <!--Stores-->
+        <scene sceneID="Cod-0L-GWz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Stores" id="5r3-bH-zyn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3uL-zT-IWy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nog-Ym-WSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040" y="-431"/>
+        </scene>
+        <!--Ordenes-->
+        <scene sceneID="jgg-h2-g8j">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Rwp-Tl-1Ep" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="Ordenes" image="ic_courier" selectedImage="ic_courier" id="E1V-Qf-YYu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zlZ-rZ-Vrv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5QK-XK-aMw" kind="relationship" relationship="rootViewController" id="2n3-cw-iA2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebw-xD-amA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294" y="249"/>
+        </scene>
+        <!--Orders-->
+        <scene sceneID="GdR-co-L4Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Orders" id="5QK-XK-aMw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aDs-kv-AJu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0v-vN-xH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040" y="246"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="Wah-tL-QJ1">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="QMA-oc-BeY" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="ic_profile" selectedImage="ic_profile" id="hwi-1a-oS9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Spv-EQ-hQw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vuF-3c-AWq" kind="relationship" relationship="rootViewController" id="Ytl-xy-8x8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEZ-mf-Elv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2294" y="1012"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="dRk-3s-4jg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="vuF-3c-AWq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jkl-77-g7i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwU-4n-maH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2869" y="1011"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_courier" width="24" height="24"/>
+        <image name="ic_place" width="28" height="18.5"/>
+        <image name="ic_profile" width="36" height="36"/>
+    </resources>
+    <color key="tintColor" name="primaryRed"/>
+</document>
